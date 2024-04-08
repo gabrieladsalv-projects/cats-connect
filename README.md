@@ -1,59 +1,61 @@
 
-# Cats Room [EM ANDAMENTO]
+# Cats Room [in progress]
 
-## Descrição:
+<img src="catsroom-main-page.png" alt="Main Page of Cats Room">
 
-Cats Room é um projeto de rede social dedicado aos amantes de gatos. Ele permite que os usuários compartilhem fotos, vídeos e histórias de seus gatos, se conectem com outros donos de gatos e aprendam mais sobre diferentes raças de gatos.
+## Description:
 
-## Recursos:
+Cats Room is a social networking project dedicated to cat lovers. It allows users to share photos, videos, and stories of their cats, connect with other cat owners, and learn more about different cat breeds.
 
-### Cadastro de Usuário:
+## Features:
 
-Os usuários podem se cadastrar na plataforma fornecendo um nome, endereço de e-mail e senha.
+### User Registration:
 
-### Autenticação:
+Users can register on the platform by providing a name, email address, and password.
 
-Os usuários podem fazer login na plataforma usando seu endereço de e-mail e senha.
+### Authentication:
 
-### Perfil do Usuário:
+Users can log in to the platform using their email address and password.
 
-Cada usuário tem um perfil onde podem adicionar uma foto de perfil, uma biografia e visualizar os gatos que adicionaram à plataforma.
+### User Profile:
 
-### Compartilhamento de Conteúdo:
+Each user has a profile where they can add a profile picture, a biography, and view the cats they have added to the platform.
 
-Os usuários podem compartilhar fotos, vídeos e histórias de seus gatos com outros usuários da plataforma.
+### Content Sharing:
 
-### Explorar Gatos:
+Users can share photos, videos, and stories of their cats with other platform users.
 
-Os usuários podem explorar diferentes raças de gatos e aprender mais sobre elas.
+### Explore Cats:
 
-### Conexão Social:
+Users can explore different cat breeds and learn more about them.
 
-Os usuários podem seguir outros usuários, curtir e comentar em suas postagens, e enviar mensagens diretas.
+### Social Connection:
 
+Users can follow other users, like and comment on their posts, and send direct messages.
 
-## Tecnologias Utilizadas:
+## Technologies Used:
 
 Frontend: HTML, CSS, JavaScript
 Backend: PHP
-Banco de Dados: MySQL
-Bibliotecas/Recursos Adicionais: PHP Mailer (para envio de e-mails), PHP Password Hashing (para segurança de senhas)
-Instruções de Instalação:
+Database: MySQL
+Additional Libraries/Resources: PHP Mailer (for email sending), PHP Password Hashing (for password security)
 
-Clone o repositório do projeto para sua máquina local.
-Importe o banco de dados fornecido (cats_room.sql) para seu servidor MySQL.
-Configure as credenciais do banco de dados no arquivo db.php.
-Certifique-se de ter um servidor web (como Apache) e PHP instalados em sua máquina.
-Inicie o servidor web e acesse o projeto em seu navegador.
+## Installation Instructions:
 
-## Desenvolvedor:
+1. Clone the project repository to your local machine.
+2. Import the provided database (cats_room.sql) to your MySQL server.
+3. Configure the database credentials in the db.php file.
+4. Make sure you have a web server (such as Apache) and PHP installed on your machine.
+5. Start the web server and access the project in your browser.
+
+## Developer:
 
 Gabriela Alvarenga
 
-## Licença:
+## License:
 
-Este projeto está licenciado sob a Licença MIT.
+This project is licensed under the MIT License.
 
-## Contato:
+## Contact:
 
-Para relatar problemas, solicitar novos recursos ou obter mais informações, entre em contato conosco em contato@catsroom.com.
+To report issues, request new features, or get more information, please contact us at contact@catsroom.com.
