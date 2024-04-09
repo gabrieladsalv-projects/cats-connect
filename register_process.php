@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if ($password !== $confirm_password) {
             
-            $error_message = "As senhas não coincidem. Por favor, tente novamente.";
+            $error_message = "Passwords do not match. Please try again.";
         
             
             header("Location: register.php?error=" . urlencode($error_message));
@@ -27,27 +27,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'contato@catsroom.com'; 
+        $mail->Username = 'contact@catsroom.com'; 
         $mail->Password = 'catsroom'; 
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
-        $mail->setFrom('contato@catsroom.com', 'CatConnect Team');
+        $mail->setFrom('contact@catsroom.com', 'CatConnect Team');
         $mail->addAddress($email, $name);
 
         $mail->isHTML(true);
-        $mail->Subject = 'Registro';
-        $mail->Body = 'Seu registro foi concluído com sucesso!';
+        $mail->Subject = 'Register';
+        $mail->Body = 'Your registration has been completed successfully!';
 
         if ($mail->send()) {
-            echo 'E-mail de confirmação enviado com sucesso!';
+            echo 'Confirmation email sent successfully!';
         } else {
-            echo 'Erro ao enviar e-mail: ' . $mail->ErrorInfo;
+            echo 'Error sending email: ' . $mail->ErrorInfo;
         }
 
     } else {
-        echo "Por favor, preencha todos os campos do formulário.";
+        echo "Please fill in all fields on the form.";
     }
 } else {
-    echo "O formulário não foi enviado.";
+    echo "The form was not sent.";
 }
