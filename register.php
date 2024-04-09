@@ -5,13 +5,28 @@ require_once('templates/header.php');
     <main>
         <div class="register-container">
             <h1>Join CatConnect</h1>
+            <?php if (isset($_GET['error'])): ?>
+            <p style="color: red;"><?php echo $_GET['error']; ?></p>
+            <?php endif; ?>
             <form action="auth.php" method="POST">
-                name<input type="text" name="name" placeholder="name" required>
-                username<input type="text" name="username" placeholder="username" required>
-                email<input type="email" name="email" placeholder="e-mail" required>
-                password<input type="password" name="password" placeholder="password" required>
-                confirm password<input type="password" name="password" placeholder="confirm password" required>
-                date of birth<input type="date" name="birth" id="birth" required>
+                <div class="register-form">
+                    <span>Name</span><input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="register-form">
+                    <span>Username</span><input type="text" name="username" placeholder="Username" required>
+                </div>
+                <div class="register-form">
+                    <span>Email</span><input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="register-form">
+                    <span>Password</span><input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="register-form">
+                    <span>Confirm Password</span><input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+                <div class="register-form">
+                    <span>Date of Birth</span><input type="date" name="birth" id="birth" required>
+                </div>
                 <button type="submit" name="register"><span>Join Now</span></button>
             </form>
             <div class="login-link">
