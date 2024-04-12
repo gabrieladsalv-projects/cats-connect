@@ -1,0 +1,118 @@
+.container-discover {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.container-discover header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.container-discover header h2, .cat-categories-discover h2 {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.container-discover nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 10px;
+
+}
+
+.card-discover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    background-color: #e7e9ed;
+}
+
+.card-discover h1 {
+    font-size: 2rem;
+    color: #000;
+    padding: 200px 0 0 0;
+}
+
+.card-discover input {
+    width: 40vw;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.card-discover a {
+    text-decoration: none;
+    color: #000;
+    background-color: var(--pink);
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.card-discover a:hover {
+    background-color: var(--dark-pink);
+}
+
+.cat-categories-discover {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.categories-discover-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.categories-discover-container a {
+    display: flex; 
+    align-items: center;
+    text-decoration: none;
+
+    height: 50px;
+    color: #000;
+    background-color: #e7e9ed;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.categories-discover-container a:hover {
+    background-color: var(--pink);
+}
+
+.categories-discover-container img {
+    margin-right: 10px;
+}
+
+.recent-cat-photos-discover {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.recent-cat-photos-discover p { 
+    font-size: 1rem;
+    color: #000;
+    margin-top: 20px;
+}
