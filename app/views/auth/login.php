@@ -8,7 +8,7 @@ require_once('../templates/header.php');
             <?php if (isset($_GET['error'])): ?>
             <p style="color: red;"><?php echo $_GET['error']; ?></p>
             <?php endif; ?>
-            <form action="login_process.php" method="POST">
+            <form action="../../controllers/login_process.php" method="POST">
                 <div class="register-form">
                     <span>Email</span><input type="email" name="email" placeholder="E-mail" required>
                 </div>
