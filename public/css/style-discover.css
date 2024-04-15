@@ -52,15 +52,14 @@
     border-radius: 5px;
 }
 
-.card-discover a {
-    text-decoration: none;
+.card-discover button {
     color: #000;
-    background-color: var(--pink);
+    background-color: var(--pink); 
     padding: 10px 40px;
     border-radius: 5px;
 }
 
-.card-discover a:hover {
+.card-discover button:hover {
     background-color: var(--dark-pink);
 }
 

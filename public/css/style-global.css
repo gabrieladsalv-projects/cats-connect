@@ -2,6 +2,7 @@
 @import url('style-index.css');
 @import url('style-register.css');
 @import url('style-discover.css');
+@import url('style-search.css');
 
 :root {
     --pink:#ff69b4;

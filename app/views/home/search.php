@@ -1,5 +1,5 @@
 <?php
-require_once('../templates/header.php');
+    require_once('../templates/header.php');
 ?>
 
 <main>
@@ -16,10 +16,20 @@ require_once('../templates/header.php');
             </ul>
         </nav>
     </header>
-    <span>Explore Cat Breeds</span>
-
+    <div class="result-container">
+        <h1>Search Results</h1>
+        <div class="result">
+        <?php
+            while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                echo "<h2>" . $row['titulo'] . "</h2>";
+                echo "<p>" . $row['conteudo'] . "</p>";
+                // Adicione aqui mais informações que você deseja exibir
+            } 
+        ?>
+        </div>
+    </div>
 </main>
 
 <?php
-require_once('../templates/footer.php');
+    require_once('../templates/footer.php');
 ?>

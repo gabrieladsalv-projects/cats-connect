@@ -20,8 +20,10 @@ require_once('../templates/header.php');
                 Share. Connect. Explore. Meow!
             </h1>
 
-            <input type="text" placeholder="Search cat breed or owner">
-            <a href="search.php">Find</a>
+            <form action="../../controllers/search_process.php" method="GET">
+                <input type="text" name="query" placeholder="Search cat breed or owner">
+                <button>Find</button>
+            </form>
         </div>
         <div class="cat-categories-discover">
             <h2>Cat Categories</h2>
@@ -49,12 +51,16 @@ require_once('../templates/header.php');
             if ($posts) {
                 // Loop pelas postagens e exibir cada uma dentro de um bloco
                 foreach ($posts as $post) {
+                    $url_img = $post['url_img'];
+                    $title = $post['title'];
+                    $author = $post['author'];
+                    $description = $post['description'];
                     ?>
                     <div class="post">
-                        <img src="<?php echo $post['url_img']; ?>" alt="Cat Photo">
-                        <h3><?php echo $post['title']; ?></h3>
-                        <><?php echo $post['author']?></p>
-                        <p><?php echo $post['description']; ?></p>
+                        <img src="<?php echo $url_img ?>" alt="Cat Photo">
+                        <h3><?php echo $title ?></h3>
+                        <><?php echo $author?></p>
+                        <p><?php echo $description ?></p>
                         
                     </div>
                     <?php
@@ -73,10 +79,3 @@ require_once('../templates/header.php');
 <?php
 require_once('../templates/footer.php');
 ?>
-
-<script>
-    document.getElementById("submitButton").addEventListener("click", function() {
-        document.getElementById("formId").submit();
-    });
-</script>
-
